@@ -301,6 +301,7 @@ button[type="submit"]:hover {
   nav {
     padding: 0 50px;
   }
+<<<<<<< HEAD
   
   .card {
     gap: 2em;
@@ -323,3 +324,6 @@ button[type="submit"]:hover {
     flex-basis: calc(33.33% - 20px);
   }
 }
+=======
+} 
+>>>>>>> c063136afa0f3e65738f0fc868181135de561fcf
