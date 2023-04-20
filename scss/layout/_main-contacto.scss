@@ -1,0 +1,105 @@
+
+main{
+
+background-color: azure;
+    .subtitulo-contact {
+      background-color: azure;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      
+    }
+  
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .tit-contacts {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+  
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 1rem;
+  
+          label {
+            font-size: 1.2rem;
+          }
+  
+          input[type='text'],
+          input[type='email'],
+          textarea {
+            width: 80%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            border-radius: 0.5rem;
+            border: none;
+          }
+  
+          textarea {
+            height: 150px;
+          }
+        }
+  
+        button[type='submit'] {
+          background-color: #C4C4C4;
+          border: none;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          font-size: 1.2rem;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          margin-top: 1rem;
+          transition: all 0.3s ease;
+  
+          &:hover {
+            background-color: #3C3C3C;
+          }
+        }
+      }
+  
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3rem;
+  
+        .info-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 2rem;
+          text-align: center;
+  
+          i {
+            font-size: 2rem;
+            color: #C4C4C4;
+            margin-bottom: 1rem;
+          }
+  
+          h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+          }
+  
+          p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  
+  } 

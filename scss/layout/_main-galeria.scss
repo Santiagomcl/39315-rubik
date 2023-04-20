@@ -1,0 +1,33 @@
+.main-pic {
+    text-align: center;
+  
+    .tit-gal {
+      margin-bottom: 2rem;
+    }
+  
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+  
+      .image-container {
+        width: calc(100% / 3 - 1rem);
+        margin-bottom: 1rem;
+  
+        @media (max-width: 767px) {
+          width: calc(100% / 2 - 1rem);
+        }
+  
+        @media (max-width: 479px) {
+          width: 100%;
+        }
+  
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
