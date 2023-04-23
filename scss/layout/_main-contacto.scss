@@ -1,12 +1,16 @@
 
-main{
-
-background-color: azure;
-    .subtitulo-contact {
+.fondo-contacto{
+  background-image: url(../assets/img/contanto1);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.subtitulo-contact {
       background-color: azure;
       font-size: 2rem;
       text-align: center;
       margin-top: 3rem;
+      padding-bottom: 2rem;
       
     }
   
@@ -14,10 +18,15 @@ background-color: azure;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-image: url(../assets/img/contanto1);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
   
       .tit-contacts {
         font-size: 1.5rem;
         margin-top: 3rem;
+        color: #fff;
       }
   
       form {
@@ -34,12 +43,13 @@ background-color: azure;
   
           label {
             font-size: 1.2rem;
+            color: #fff;
           }
   
           input[type='text'],
           input[type='email'],
           textarea {
-            width: 80%;
+            width: 100%;
             padding: 0.5rem;
             font-size: 1rem;
             margin-top: 0.5rem;
@@ -48,14 +58,15 @@ background-color: azure;
           }
   
           textarea {
-            height: 150px;
+            height: 200px;
+            width: auto;
           }
         }
   
         button[type='submit'] {
           background-color: #C4C4C4;
           border: none;
-          color: #fff;
+          color: #020202;
           padding: 0.5rem 1rem;
           font-size: 1.2rem;
           border-radius: 0.5rem;
@@ -72,7 +83,7 @@ background-color: azure;
       .contact-info {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         margin-top: 3rem;
   
         .info-item {
@@ -84,22 +95,24 @@ background-color: azure;
   
           i {
             font-size: 2rem;
-            color: #C4C4C4;
+            color: #ffffff;
             margin-bottom: 1rem;
           }
   
           h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
+            color: #ffffff;
           }
   
           p {
             font-size: 1rem;
             line-height: 1.5;
             margin-bottom: 0;
+            color: #ffffff;
           }
         }
       }
     }
   
-  } 
+  

@@ -1,77 +1,21 @@
 @import"./base/resets";
+@import"./utilities/variasbles";
 @import"./components/bootstrap";
+@import"./utilities/mixins";
 @import"./layout/media768";
 @import"./utilities/variasbles";
- @import"./layout/main-index";
- @import"./layout/main-contacto";
- @import"./layout/header"; 
- @import"./layout/footer"; 
- @import"./components/bootstrap"; 
- @import"./utilities/variasbles";
- @import"./layout/main-nosotros";
- @import"./layout/header"; 
- @import"./layout/main-galeria";
+@import"./layout/main-index";
+@import"./layout/header"; 
+@import"./layout/main-contacto";
+@import"./layout/footer"; 
+@import"./layout/main-nosotros";
+@import"./layout/main-galeria";
 
 
 
-
-  // .cards-grids, .cards {
-  //   background-color: azure;
-  // }
-  
-  // .card {
-  //   width: 100%;
-  //   height: auto;
-  //   margin: 0;
-  //   padding: 60px 0;
-  //   display: flex;
-  //   justify-content: center;
-  //   gap: 3.5em;
-  //   background-color: azure;
-  //   align-items: center;
-  
-  //   &-item {
-  //     background-color: azure;
-  //     display: flex;
-  //     justify-content: center;
-  //   }
-  
-  //   &-content {
-  //     width: 100%;
-  //     max-width: 400px;
-  //     margin: 0 auto;
-  //     background-color: azure;
-  //     text-align: center;
-  //   }
-  
-  //   &-picture {
-  //     width: 90%;
-  //     max-width: 400px;
-  //     margin: 0 auto;
-  //     position: relative;
-  //     bottom: 2em;
-  
-  //     & img {
-  //       width: 100%;
-  //     }
-  //   }
-  
-  //   &-text {
-  //     justify-content: center;
-  //   }
-  // }
-  
-
-  
-  // .contacts {
-  //   background-color: azure;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-  
-  //   form {
-  //     display: flex;
-     
-  //   }
+.fondo-contact{
+    background-image: url(../assets/img/contanto1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

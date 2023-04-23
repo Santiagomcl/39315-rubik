@@ -4,275 +4,116 @@
 @import"../utilities/variasbles";
 
 
-
- nav {
-  background-color: $color-background;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  padding-top: 35px;
-  position:initial;
-  top: 35px;
-  left: 0;
-  width: 100%;
-  z-index: 999;
- 
+nav {
+  .navbar-brand {
+    color: rgb(244, 171, 14); // Cambiar el color de la fuente a rojo
+    letter-spacing: 15px;
+    font-size: 25px;
+      margin-left: 35px;
+    font-family: 'Bebas Neue', cursive;
+    }
    
-  .checkbtn {
-    color: $color-active;
-    font-size: 40px;
-    cursor: pointer;
-    display: none;
-    
-    &:hover {
-      color: $color-active, $color-text;
-      
+    @media (max-width: 458px) {
+    .navbar-brand{
+    color: rgba(14, 14, 14, 0.833);
+    letter-spacing: 12px;
+    font-size: 25px;
+    margin-left: 35px;
+    font-family: 'Bebas Neue', cursive;
     }
-    
-    &:focus {
-      outline: none;
     }
+  
+    @media (max-width: 409px) {
+  .navbar-brand{
+    color: rgba(0, 0, 0, 0.833);
+  letter-spacing: 9px;
+  font-size: 25px;
+    margin-left: 9px;
+  font-family: 'Bebas Neue', cursive;
   }
-  
-  #check {
-    display: none;
-    
-    &:checked ~ ul {
-      height: auto;
-    }
-    
-    &:checked ~ .checkbtn i:before {
-      content: "\f00d";
-    }
   }
-  
-  .enlace {
-    display: inline-block;
-    height: 50px;
-    margin-right: 15px;
-  }
-  
-  .logo {
-    height: 100%;
-    padding-left: 30px;
-    width: 100%;
-    opacity: 0%;
-  } 
-  
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    
-    li {
-      margin: 0 10px;
-      
-      a {
-        color: $color-text;
-        display: block;
-        font-size: 16px;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        
-        &:hover {
-          background-color: $color-active;
-         
-        }
-        
-        &.active {
-          background-color: $color-active;
-          color: #fbfbfb;
-        }
-      }
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .checkbtn {
-      display: flex;
-      justify-content: center;
-      color: rgb(227, 126, 11);
-      padding-left: 350px;
 
-
-    }
-    
-    ul {
-      display: block;
-      height: 0;
-      overflow: hidden;
-      transition: height 0.5s ease-in-out;
-      background-color: $color-background;
-      position: initial;
-      top: 50px;
-      left: 0;
-      width:auto;
-      
-      li {
-        display: block;
-        margin: 10px 0;
-        
-        a {
-          display: block;
-          text-align: center;
-          padding: 10px 0;
-        }
-      }
-    }
+  @media (max-width: 369px) {
+  .navbar-brand{
+    color: rgba(0, 0, 0, 0.833);
+  letter-spacing: 6px;
+  font-size: 25px;
+    margin-left: 5px;
+  font-family: 'Bebas Neue', cursive;
   }
+  }
+ 
+  
 }
 
 
-  .container-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-basis: 100%;
-    padding: 2rem 0;
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  .proy-rubik {
+    font-size: 6rem;
+    margin-left: 35px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    letter-spacing: 35px;
+    font-family: 'Bebas Neue', cursive;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  @media (max-width: 1111px) {
     .proy-rubik {
       font-size: 4rem;
-      font-weight: 500;
-      padding-left: 40px;
       letter-spacing: 16px;
-      font-family: sans-serif;
-     
-
-      a {
-        text-decoration: none;
-        color: #333;
-
-        &:hover {
-          color: #7f5af0;
-        }
-      }
     }
 
-    .logo-rubik {
-      img {
-        max-width: 100%;
-        height: auto;
-        
-       
-      }
+    img {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .container-header{
-      .proy-rubik {
-        font-size: 2rem;
-        font-weight: 500;
-        padding-left: 35px;
-        letter-spacing: 8px;
-      }
-    }
-    
-    
-    .nav {
-      ul {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        position: fixed;
-        top: 100%;
-        left: 30%;
-        width: auto;
-        background-color: #fff;
-        text-align: center;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-
-        li {
-          margin: 1rem 0;
-
-          a {
-            font-size: 1.5rem;
-            font-weight: 600;
-          }
-        }
-      }
-    }
-  }
-  @media only screen and (max-width: 450px){
-  .container-header{
+  @media (max-width: 867px) {
     .proy-rubik {
-      font-size: 1.5rem;
-      font-weight: 500;
-      padding-left: 35px;
-      letter-spacing: 6px;
+      font-size: 3.5rem;
+      letter-spacing: 12px;
     }
   }
-  
-  
-  .nav {
-    ul {
+
+  @media (max-width: 798px) {
+    .proy-rubik {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: -50px;
+    margin-bottom: -50px;
+
+    .proy-rubik {
       display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 30%;
-      width: 100%;
-      background-color: #fff;
-      text-align: center;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      z-index: 1;
+      font-size: 1.5rem;
+    }
 
-      li {
-        margin: 1rem 0;
-
-        a {
-          font-size: 1.5rem;
-          font-weight: 600;
-        }
-      }
+    .img-head {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
     }
   }
-  }
-  @media only screen and (max-width: 365px){
-    .container-header{
-      .proy-rubik {
-        font-size: 1.2rem;
-        font-weight: 500;
-        padding-left: 6px;
-        letter-spacing: 5px;
-      }
-    }
-    
-    
-    .nav {
-      ul {
-        display: flex;
-       justify-content: space-around;
-       
-        // flex-direction: column;
-        position:relative;
-        top: 100%;
-        left: 0%;
-        width: auto;
-        background-color: #fff;
-        text-align: center;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-  
-        li {
-          margin: 1rem 0;
-  
-          a {
-            font-size: 1.5rem;
-            font-weight: 600;
-          }
-        }
-      }
-    }
-    }
-
+}
 
 
 
