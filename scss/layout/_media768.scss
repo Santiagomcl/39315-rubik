@@ -1,0 +1,27 @@
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .cards {
+      .card {
+        width: calc(50% - 1rem);
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        
+        .card-content {
+          padding: 1rem;
+          
+          h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+          }
+          
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  

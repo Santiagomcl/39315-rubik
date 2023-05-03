@@ -1,0 +1,46 @@
+
+
+.subtitulo-clases{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+main{
+  background-color: azure;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 800px;
+
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 35px;
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  p {
+    text-align: justify;
+  }
+}

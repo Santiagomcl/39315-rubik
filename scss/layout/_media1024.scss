@@ -1,0 +1,31 @@
+@media only screen and (min-width: 769px) {
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+      .card {
+        width: calc(33.33% - 1rem);
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        
+        .card-content {
+          padding: 1rem;
+          
+          h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+          }
+          
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,18 +1,23 @@
 
-.fondo-contacto{
-  background-image: url(../assets/img/contanto1);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .subtitulo-contact {
-      background-color: azure;
-      font-size: 2rem;
-      text-align: center;
-      margin-top: 3rem;
-      padding-bottom: 2rem;
-      
-    }
+ color: #000000;
+ background-color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  
+  
+}
+
+
+// main{
+//   background-image: url(../assets/img/contanto1);
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+
   
     .contacts {
       display: flex;

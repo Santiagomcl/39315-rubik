@@ -1,1 +1,50 @@
-@import"./header";
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    .card {
+      max-width: 500px;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .card-content {
+        padding: 20px;
+        text-align: center;
+        h3 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 16px;
+          color: #999;
+          line-height: 1.5;
+          margin-bottom: 15px;
+        }
+        a {
+          display: inline-block;
+          padding: 8px 20px;
+          background-color: #0077b6;
+          color: #fff;
+          border-radius: 30px;
+          font-weight: bold;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background-color: #023e8a;
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+      }
+    }
+  }
+  

@@ -1,9 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .cards .card {
+    width: calc(50% - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 2rem; }
+    .cards .card:nth-child(2n) {
+      margin-right: 0; }
+    .cards .card .card-content {
+      padding: 1rem; }
+      .cards .card .card-content h3 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem; }
+      .cards .card .card-content p {
+        font-size: 1.2rem; } }
 
 nav .navbar-brand {
   color: #f4ab0e;
@@ -81,18 +95,17 @@ nav .navbar-brand {
         justify-content: center;
         max-width: 100%; } }
 
-.fondo-contacto {
-  background-image: url(../assets/img/contanto1);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+.container {
+  display: flex;
+  justify-content: center; }
 
 .subtitulo-contact {
-  background-color: azure;
+  color: #000000;
+  background-color: #ffffff;
   font-size: 2rem;
   text-align: center;
   margin-top: 3rem;
-  padding-bottom: 2rem; }
+  margin-bottom: 4rem; }
 
 .contacts {
   display: flex;
@@ -168,81 +181,46 @@ nav .navbar-brand {
         margin-bottom: 0;
         color: #ffffff; }
 
-nav .navbar-brand {
-  color: #f4ab0e;
-  letter-spacing: 15px;
-  font-size: 25px;
-  margin-left: 35px;
-  font-family: 'Bebas Neue', cursive; }
-
-@media (max-width: 458px) {
-  nav .navbar-brand {
-    color: rgba(14, 14, 14, 0.833);
-    letter-spacing: 12px;
-    font-size: 25px;
-    margin-left: 35px;
-    font-family: 'Bebas Neue', cursive; } }
-
-@media (max-width: 409px) {
-  nav .navbar-brand {
-    color: rgba(0, 0, 0, 0.833);
-    letter-spacing: 9px;
-    font-size: 25px;
-    margin-left: 9px;
-    font-family: 'Bebas Neue', cursive; } }
-
-@media (max-width: 369px) {
-  nav .navbar-brand {
-    color: rgba(0, 0, 0, 0.833);
-    letter-spacing: 6px;
-    font-size: 25px;
-    margin-left: 5px;
-    font-family: 'Bebas Neue', cursive; } }
-
-.container-header {
+.cards {
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .container-header .proy-rubik {
-    font-size: 6rem;
-    margin-left: 35px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    letter-spacing: 35px;
-    font-family: 'Bebas Neue', cursive; }
-    .container-header .proy-rubik p {
-      margin: 0; }
-  .container-header img {
-    max-width: 100%; }
-  @media (max-width: 1111px) {
-    .container-header .proy-rubik {
-      font-size: 4rem;
-      letter-spacing: 16px; }
-    .container-header img {
-      display: flex;
-      justify-content: center;
-      max-width: 100%; } }
-  @media (max-width: 867px) {
-    .container-header .proy-rubik {
-      font-size: 3.5rem;
-      letter-spacing: 12px; } }
-  @media (max-width: 798px) {
-    .container-header .proy-rubik {
-      font-size: 3rem; } }
-  @media (max-width: 768px) {
-    .container-header {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      margin-top: -50px;
-      margin-bottom: -50px; }
-      .container-header .proy-rubik {
-        display: none;
-        font-size: 1.5rem; }
-      .container-header .img-head {
-        display: flex;
-        justify-content: center;
-        max-width: 100%; } }
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; }
+  .cards .card {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; }
+    .cards .card img {
+      width: 100%;
+      height: auto;
+      display: block; }
+    .cards .card .card-content {
+      padding: 20px;
+      text-align: center; }
+      .cards .card .card-content h3 {
+        font-size: 24px;
+        margin-bottom: 10px; }
+      .cards .card .card-content p {
+        font-size: 16px;
+        color: #999;
+        line-height: 1.5;
+        margin-bottom: 15px; }
+      .cards .card .card-content a {
+        display: inline-block;
+        padding: 8px 20px;
+        background-color: #0077b6;
+        color: #fff;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out; }
+        .cards .card .card-content a:hover {
+          background-color: #023e8a; }
+    .cards .card:hover {
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px); }
 
 .main-pic {
   text-align: center; }
@@ -269,6 +247,40 @@ nav .navbar-brand {
         transition: transform 0.3s ease-in-out; }
       .main-pic .gallery .image-container:hover img {
         transform: scale(1.1); }
+
+.subtitulo-clases {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px; }
+
+main {
+  background-color: azure; }
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 800px; }
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 35px; }
+  .card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto; }
+  .card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center; }
+  .card p {
+    text-align: justify; }
 
 .fondo-contact {
   background-image: url(../assets/img/contanto1.jpg);
